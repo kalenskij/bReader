@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="16dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:radius="8dp"
+        android:elevation="4dp">
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            android:background="@drawable/img"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter book title"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/authorEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:hint="Enter book author"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter quantity"
+        android:layout_marginTop="10dp"
+        android:inputType="number" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#E7DDDD"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"
+        android:text="Select Book Cover Image"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadPdfButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Book PDF"
+        android:background="#E7DDDD"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="16dp"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7DDDD"
+        android:textColor="@color/black"
+
+        android:text="Upload Book"
+        android:layout_marginTop="16dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/br_books"
+        android:layout_width="match_parent"
+        android:background="#E7DDDD"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"
+        android:text="Borrowed"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

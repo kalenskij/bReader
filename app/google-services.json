@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "106370971443",
+    "firebase_url": "https://breader-4c209-default-rtdb.firebaseio.com",
+    "project_id": "breader-4c209",
+    "storage_bucket": "breader-4c209.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106370971443:android:c13328942046d64d7b7046",
+        "android_client_info": {
+          "package_name": "com.example.bReader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvNusD-TWBNRqk_rZnl_H8MhBP6JrzH9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

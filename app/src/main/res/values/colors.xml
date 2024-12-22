@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+   <color name="status_bar_color">@color/black</color>
+    <color name="light_gray">#EDE5E5</color>
+    <color name="light_green">#E3F2E3</color>
+    <color name="deep_green">#154915</color>
+    <color name="login_button_text_color_light">#000000</color>
+
+    <color name="light_item_background">#FFFFFF</color>
+    <color name="light_text">#000000</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="dark_item_background">#2C2C2C</color>
+    <color name="dark_text">#FFFFFF</color>
+    <color name="ark_quantity_text">#FFFFFF</color>
+
+
+</resources>
