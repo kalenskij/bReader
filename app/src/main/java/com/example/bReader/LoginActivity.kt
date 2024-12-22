@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
     private lateinit var etPass: EditText
     lateinit var btnLogin: Button
-//    lateinit var adminText :TextView
+    lateinit var adminText :TextView
     // Creating firebaseAuth object
     lateinit var auth: FirebaseAuth
 
@@ -32,17 +32,17 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         etEmail = findViewById(R.id.etEmailAddress)
         etPass = findViewById(R.id.etPassword)
-//        adminText= findViewById(R.id.tvAdminPanel)
+        adminText= findViewById(R.id.tvAdminPanel)
         // initialising Firebase auth object
         auth = FirebaseAuth.getInstance()
 
         val window = window
         window.statusBarColor = resources.getColor(R.color.status_bar_color, null)
 
-//        adminText.setOnClickListener {
-//            val i =Intent(applicationContext,UploadActivity::class.java)
-//            startActivity(i)
-//        }
+        adminText.setOnClickListener {
+            val i =Intent(applicationContext,UploadActivity::class.java)
+            startActivity(i)
+        }
 
         btnLogin.setOnClickListener {
             login()
