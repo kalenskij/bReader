@@ -15,7 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -56,9 +56,9 @@ dependencies {
     implementation(libs.firebase.auth.ktx)
 
     // Testing libraries
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.junit:junit:1.1.3")
-    androidTestImplementation("androidx.espresso:espresso-core:3.4.0")
+//    testImplementation("junit:junit:4.13.2")
+//    androidTestImplementation("androidx.junit:junit:1.1.3")
+//    androidTestImplementation("androidx.espresso:espresso-core:3.4.0")
 
     implementation ("com.joanzapata.pdfview:android-pdfview:1.0.4@aar")
 //    implementation("androidx.core:core-ktx:1.12.0")

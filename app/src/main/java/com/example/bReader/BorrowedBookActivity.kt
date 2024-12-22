@@ -32,21 +32,22 @@ class BorrowedBookActivity : AppCompatActivity() {
         val database = FirebaseDatabase.getInstance()
         val borrowedBooksRef = database.reference.child("borrowed_books")
 
-        currentUser?.uid?.let { userId ->
-            borrowedBooksRef.child(userId).get().addOnSuccessListener { snapshot ->
-                if (snapshot.exists()) {
-                    borrowedBooksList.clear()
-                    for (childSnapshot in snapshot.children) {
-                        val bookTitle = childSnapshot.child("book_title").value.toString()
-                        val borrowedBy = childSnapshot.child("borrowed_by").value.toString()
+        borrowedBooksRef.get().addOnSuccessListener { snapshot ->
+            if (snapshot.exists()) {
+                borrowedBooksList.clear()
+                for (childSnapshot in snapshot.children) {
+                    for (childChildSnapshot in childSnapshot.children) {
+                        val bookTitle = childChildSnapshot.child("book_title").value.toString()
+                        val borrowedBy = childChildSnapshot.child("borrowed_by").value.toString()
 
                         borrowedBooksList.add(BorrowedBook(bookTitle, borrowedBy))
                     }
-                    borrowedBooksAdapter.notifyDataSetChanged()
                 }
-            }.addOnFailureListener { exception ->
-                Toast.makeText(this, "Failed to load borrowed books: ${exception.message}", Toast.LENGTH_SHORT).show()
+                borrowedBooksAdapter.notifyDataSetChanged()
             }
+        }.addOnFailureListener { exception ->
+            Toast.makeText(this, "Failed to load borrowed books: ${exception.message}", Toast.LENGTH_SHORT).show()
         }
     }
 }
+
