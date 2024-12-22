@@ -53,7 +53,6 @@ class BookAdapter(private val bookList: List<Book>, private val context: Context
             holder.titleTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
             holder.authorTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
             holder.quantityTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
-
         }
 
 

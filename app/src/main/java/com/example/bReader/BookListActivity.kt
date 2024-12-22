@@ -29,12 +29,6 @@ class BookListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_list)
-        val settingsButton = findViewById<ImageButton>(R.id.settingsButton)
-
-        // Set the settings button click listener
-        settingsButton.setOnClickListener {
-            showSettingsDialog()
-        }
         // Initialize Firebase Database reference
         databaseRef = FirebaseDatabase.getInstance().getReference("books")
 

@@ -13,27 +13,14 @@
     >
 
 
-
-        <ImageButton
-            android:id="@+id/settingsButton"
-            android:layout_width="40dp"
-            android:backgroundTint="@color/white"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-
-            android:layout_gravity="center_vertical"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_3"
-            />
-
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Books Reader"
-            android:layout_marginLeft="5dp"
-            android:textSize="23sp"
-
             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="bReader"
+
+            android:textSize="23sp"
 
             />
 
