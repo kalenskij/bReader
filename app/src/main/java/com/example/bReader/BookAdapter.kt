@@ -43,19 +43,6 @@ class BookAdapter(private val bookList: List<Book>, private val context: Context
         Glide.with(holder.itemView.context).load(book.imageUrl).into(holder.coverImageView)
 
 
-
-        val nightModeFlags = context.resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
-        val isDarkMode = nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES
-
-        // Change colors based on dark or light mode
-        if (isDarkMode) {
-            holder.itemBg.setBackgroundColor(ContextCompat.getColor(context, R.color.dark_item_background))
-            holder.titleTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
-            holder.authorTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
-            holder.quantityTextView.setTextColor(ContextCompat.getColor(context, R.color.dark_text))
-        }
-
-
         if (book.quantity < 1) {
             holder.quantityTextView.setTextColor(Color.RED)
             holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.light_gray))
